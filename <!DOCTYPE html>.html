@@ -4,15 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Limelight&family=Manufacturing+Consent&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              bebas: ["Bebas Neue", "sans-serif"],
+              dancing: ["Dancing Script", "cursive"],
+              limelight: ["Limelight", "cursive"],
+              manufacturing: ["Manufacturing Consent", "sans-serif"],
+              oswald: ["Oswald", "sans-serif"],
+              playfair: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <div
-      class="w-screen h-screen bg-black bg-cover bg-center"
+      class="w-screen h-[180vh] bg-black bg-cover bg-center"
       style="background-image: url('S.jpg')"
+      style="font-family: 'Manufacturing Consent', sans-serif"
     >
-      <div id="navbar"></div>
-      <div></div>
+      <div
+        id="navbar"
+        class="flex justify-between text-white font-bold p-5 bg-white/10 backdrop-blur-md items-center p-4"
+        style="font-family: 'Dancing Script', sans-serif"
+      >
+        <h1>ANIME ERA</h1>
+        <div class="flex space-x-4 text-white">
+          <div>Home</div>
+          <div>Contact</div>
+          <div>Team</div>
+          <div>About us</div>
+        </div>
+      </div>
+      <div
+        id="Cardcontainer"
+        class="flex relative"
+        style="font-family: 'Dancing Script', sans-serif"
+      >
+        <div
+          class="h-[50vw] w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute hover:scale-105 transition-transform duration-300 ease-in-out"
+        >
+          <h1 class="font-5xl font-bold"></h1>
+          <p></p>
+          <img src="" alt="" />
+          <p></p>
+        </div>
+        <div
+          class="h-[50vw] w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute hover:scale-105 transition-transform duration-300 ease-in-out top-30 left-30"
+        >
+          <h1 class="font-5xl font-bold"></h1>
+          <p></p>
+          <img src="" alt="" />
+          <p></p>
+        </div>
+        <div
+          class="h-[50vw] w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute hover:scale-105 transition-transform duration-300 ease-in-out top-60 left-60"
+        >
+          <h1 class="font-5xl font-bold"></h1>
+          <p></p>
+          <img src="" alt="" />
+          <p></p>
+        </div>
+        <div
+          class="h-[50vw] w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute hover:scale-105 transition-transform duration-300 ease-in-out top-90 left-90"
+        >
+          <h1 class="font-5xl font-bold"></h1>
+          <p></p>
+          <img src="" alt="" />
+          <p></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
