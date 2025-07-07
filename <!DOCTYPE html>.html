@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind fixed -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -39,11 +41,12 @@
         style="font-family: 'Playfair Display', sans-serif"
       >
         <div
+          onmouseenter="GSAP(card1)"
           id="card1"
-          class="h-[50vw] overflow-hidden w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute hover:scale-125 transition-transform duration-300 hover:z-[99] ease-in-out"
+          class="card h-[90vh] origin-top overflow-hidden w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute transition-transform duration-300 ease-in-out"
         >
           <h1
-            class="text-5xl font-extrabold rounded-sm top-8 left-8 fixed text-white"
+            class="text-5xl font-extrabold rounded-sm top-[10vh] left-[10vw] fixed text-white"
           >
             ONE_PIECE
           </h1>
@@ -52,11 +55,12 @@
           <p></p>
         </div>
         <div
+          onmouseenter="GSAP(card2)"
           id="card2"
-          class="h-[50vw] overflow-hidden w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute hover:scale-125 transition-transform duration-300 hover:z-[99] ease-in-out top-30 left-30"
+          class="card h-[90vh] origin-top overflow-hidden w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute transition-transform duration-300 ease-in-out top-30 left-30"
         >
           <h1
-            class="text-5xl font-extrabold rounded-sm top-8 left-8 fixed text-white"
+            class="text-5xl font-extrabold rounded-sm top-[10vh] left-[10vw] fixed text-white"
           >
             JUJUTSU_KISEN
           </h1>
@@ -65,11 +69,12 @@
           <p></p>
         </div>
         <div
+          onmouseenter="GSAP(card3)"
           id="card3"
-          class="h-[50vw] overflow-hidden w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute hover:scale-125 transition-transform duration-300 hover:z-[99] ease-in-out top-60 left-60"
+          class="card h-[90vh] origin-top overflow-hidden w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute transition-transform duration-300 ease-in-out top-60 left-60"
         >
           <h1
-            class="text-5xl font-extrabold rounded-sm top-8 left-8 fixed text-white"
+            class="text-5xl font-extrabold rounded-sm top-[10vh] left-[10vw] fixed text-white"
           >
             NARUTO
           </h1>
@@ -78,11 +83,12 @@
           <p></p>
         </div>
         <div
+          onmouseenter="GSAP(card4)"
           id="card4"
-          class="h-[50vw] overflow-hidden w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute hover:scale-125 transition-transform duration-300 hover:z-[99] ease-in-out top-90 left-90"
+          class="card h-[90vh] origin-top overflow-hidden w-[80vh] bg-white/10 backdrop-blur-md m-4 p-4 rounded-lg absolute transition-transform duration-300 ease-in-out top-90 left-90"
         >
           <h1
-            class="text-5xl font-extrabold rounded-sm top-8 left-8 fixed text-white"
+            class="text-5xl font-extrabold rounded-sm top-[10vh] left-[10vw] fixed text-white"
           >
             BLEACH
           </h1>
